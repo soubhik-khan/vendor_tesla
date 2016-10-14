@@ -25,10 +25,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.debug.alloc=0
 
 # Backup Tool
-PRODUCT_COPY_FILES += \
-    vendor/tesla/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/tesla/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/tesla/prebuilt/common/bin/50-tesla.sh:system/addon.d/50-tesla.sh
+# PRODUCT_COPY_FILES += \
+#    vendor/tesla/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+#    vendor/tesla/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+#    vendor/tesla/prebuilt/common/bin/50-tesla.sh:system/addon.d/50-tesla.sh
 
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
@@ -73,10 +73,10 @@ PRODUCT_PACKAGES += \
     su
 
 # Optional packages
-PRODUCT_PACKAGES += \
-    Basic \
-    LiveWallpapersPicker \
-    PhaseBeam
+# PRODUCT_PACKAGES += \
+#    Basic \
+#    LiveWallpapersPicker \
+#    PhaseBeam
 
 # AudioFX
 PRODUCT_PACKAGES += \
@@ -125,7 +125,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.sf.extractor-plugin=libffmpeg_extractor.so
 
 # easy way to extend to add more packages
--include vendor/extra/product.mk
+# -include vendor/extra/product.mk
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/tesla/overlay/common
 
